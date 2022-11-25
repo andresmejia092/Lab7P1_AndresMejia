@@ -30,7 +30,7 @@ public class Lab7P1_AndresMejia {
                     }
                     int [][]numeros=lectura(filas,columnas);
                     
-                    JOptionPane.showMessageDialog(null, "La matriz original es: \n"+print(numeros)+"\n"+"La matriz trastornada es: \n"+print(transpuesta(numeros)));
+                    
                    
                     
                     
@@ -67,8 +67,7 @@ public class Lab7P1_AndresMejia {
                     cadena2=read.next();
                     cadena1="-"+cadena1;
                     cadena2="-"+cadena2;
-                    JOptionPane.showMessageDialog(null, "El valor de la subsecuencia mas grande es: "+lcs(cadena1,cadena2));
-                    
+                    lcs(cadena1,cadena2);
                     
                     
                     break;
@@ -169,7 +168,9 @@ public class Lab7P1_AndresMejia {
                     }
             }
         }
+        
         subseq=temporal[cadena1.length()-1][cadena2.length()-1];
+        JOptionPane.showMessageDialog(null, print(temporal)+"\n El tamaño de la subsecuencia mayor es: "+subseq);
         return subseq;
     } 
     
